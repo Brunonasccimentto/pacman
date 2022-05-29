@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            top: 0px;
+            margin: 0px;
+            background-color:rgb(9, 1, 19);
+        }
+        #tela{
+            background-color: black;
+            display: block;
+            margin: auto;
+        }
+        input{
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 32px;
+            background-color: yellow;
+            text-align: center;
+        }
+        #pause{
+
+            display: none;
+        }
+        footer{
+            display: block;
+            background-color: white;
+            text-align: center;
+            margin-top: 10%;
+        }
+        .vol{
+            display: inline-block;
+            width: 50px;
+            margin-left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <canvas id="tela" width="1200px" height="500px"></canvas>
+    <input id="play" type="button" value="Play" onclick="play()">
+    <input id="pause" type="button" value="Pause" onclick="pause()">
+
+    <audio id="audio" loop>
+        <source src="./assets/y2meta.com - Pac-Man Sound Effects (128 kbps).mp3">
+    </audio>
+    
+
+    <footer> Desenvolvido por Bruno Rodrigues</footer>
+    <script src="script.js"> </script>
+</body>
+</html>
